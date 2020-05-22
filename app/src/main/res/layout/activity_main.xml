@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground">
+
+    <EditText
+        android:hint="@string/phonenumber"
+        android:id="@+id/phoneTextEdit"
+        style="@style/EditText"
+        android:autofillHints="no"
+        android:drawableStart="@drawable/ic_phone_white_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:maxLength="11"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/authenticateButton"
+        style="@style/Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneTextEdit"
+        android:layout_marginTop="30dp"
+        android:text="@string/authenticate"
+        android:clickable="false"/>
+
+</android.support.constraint.ConstraintLayout>

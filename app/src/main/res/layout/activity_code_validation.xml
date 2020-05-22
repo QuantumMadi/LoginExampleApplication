@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CodeValidation"
+    android:background="@color/colorBackground">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/EditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/validCodeTextEdit"
+        android:layout_width="wrap_content"
+        android:autofillHints="no"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:maxLength="4"
+        android:inputType="number"
+        style="@style/EditText"
+        android:hint="@string/validation_code"/>
+
+    <Button
+        android:id="@+id/validateButton"
+        style="@style/Button"
+        app:layout_constraintTop_toBottomOf="@id/validCodeTextEdit"
+        android:layout_marginTop="@dimen/button_text_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/validate"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

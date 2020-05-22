@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LoginExampleApplication</string>
+    <string name="authenticate">Authenticate</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="validation_code_notification">On your number were send a validation code</string>
+    <string name="validation_code">Validation Code</string>
+    <string name="validate">Validate</string>
+    <string name="user_name">User Name</string>
+    <string name="user_family_name">User Family Name</string>
+    <string name="submit_data">Submit data</string>
+</resources>
